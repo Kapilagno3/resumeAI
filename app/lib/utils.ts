@@ -15,3 +15,5 @@ export const formatSize = (bytes: number): string => {
   const formatted = unitIndex === 0 ? `${Math.round(value)}` : `${value.toFixed(1)}`
   return `${formatted} ${units[unitIndex]}`
 }
+
+export const generateUUID=()=>crypto.randomUUID();
